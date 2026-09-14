@@ -1,6 +1,8 @@
 {
   "name": "web",
   "private": true,
+  "license": "MIT",
+  "author": "Derick Espinosa",
   "type": "module",
   "imports": {
     "#/*": "./src/*"

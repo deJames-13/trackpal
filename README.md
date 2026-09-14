@@ -268,4 +268,4 @@ Please review [AGENTS.md](file:///home/dej/Projects/projectx/trackpal/AGENTS.md)
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE) © 2026 Derick Espinosa.
