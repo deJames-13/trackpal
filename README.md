@@ -1,4 +1,4 @@
-# 🪙 TrackPal (Schedly)
+# 🪙 TrackPal
 
 > **Modern Rotating Savings & Credit Association (Paluwagan / ROSCA) Platform**  
 > Build financial discipline, pool savings transparently, and automate payout rotations with peer trust scores and digital receipt tracking.
