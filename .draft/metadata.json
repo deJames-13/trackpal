@@ -1,0 +1,6 @@
+{
+  "name": "TrackPal",
+  "description": "Sunflower yellow Bento Box and Swiss-styled Paluwagan tracker for rotating savings, automated contribution cycles, rotation orders, and peer trust management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

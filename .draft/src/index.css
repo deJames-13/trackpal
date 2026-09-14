@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-swiss: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --sunflower: #F5B800;
+    --sunflower-hover: #E0A700;
+    --sunflower-pressed: #C79200;
+    --sunflower-subtle: #FEF9E6;
+    --sunflower-dark: #8A6300;
+    --bg-light: #F4F5F7;
+    --card-light: #FFFFFF;
+    --border-light: rgba(0, 0, 0, 0.08);
+  }
+
+  .dark {
+    --sunflower: #FACC15;
+    --sunflower-hover: #F5B800;
+    --sunflower-pressed: #E0A700;
+    --sunflower-subtle: rgba(245, 184, 0, 0.12);
+    --sunflower-dark: #FDE047;
+    --bg-dark: #0D0E11;
+    --card-dark: #16181D;
+    --border-dark: rgba(255, 255, 255, 0.09);
+  }
+
+  body {
+    font-family: var(--font-swiss);
+    background-color: var(--bg-light);
+    color: #111827;
+  }
+
+  .dark body {
+    background-color: var(--bg-dark);
+    color: #F3F4F6;
+  }
+}
+
+/* Bento Box & Ant Design Minimalist Utilities */
+.bento-card {
+  border-radius: 1rem;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark .bento-card {
+  border-color: rgba(255, 255, 255, 0.08);
+  background-color: #16181D;
+}
+
+.bento-card-sunflower {
+  border-radius: 1rem;
+  background-color: #F5B800;
+  color: #0F0F0F;
+}
+
+/* Ant Design Table & Form Overrides */
+.ant-table-header {
+  background-color: #FAFAFA;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dark .ant-table-header {
+  background-color: #1F2228;
+}
+
+/* Swiss Minimalist High-Contrast Typography */
+.swiss-display {
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+.swiss-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  letter-spacing: -0.02em;
+}
+
+/* Subtle Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.14);
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.24);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
