@@ -98,6 +98,94 @@
   letter-spacing: -0.02em;
 }
 
+/* 3D Tactile Paluwagan Typography with Push-Button Press State */
+.paluwagan-3d {
+  display: inline-block;
+  color: #f5b800;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  text-shadow:
+    1px 1px 0 #dfa500,
+    2px 2px 0 #cc9400,
+    3px 3px 0 #b88200,
+    4px 4px 0 #a37100,
+    5px 5px 0 #8f6000,
+    6px 6px 0 #7a4f00,
+    7px 7px 0 #613c00,
+    8px 8px 14px rgba(0, 0, 0, 0.28);
+  transform: translate(0, 0);
+  transition:
+    transform 0.12s cubic-bezier(0.34, 1.56, 0.64, 1),
+    text-shadow 0.12s cubic-bezier(0.34, 1.56, 0.64, 1),
+    color 0.12s ease;
+}
+
+.paluwagan-3d:hover {
+  color: #ffc21a;
+  transform: translate(-1px, -1px);
+  text-shadow:
+    1px 1px 0 #dfa500,
+    2px 2px 0 #cc9400,
+    3px 3px 0 #b88200,
+    4px 4px 0 #a37100,
+    5px 5px 0 #8f6000,
+    6px 6px 0 #7a4f00,
+    7px 7px 0 #613c00,
+    8px 8px 0 #4a2c00,
+    9px 9px 18px rgba(0, 0, 0, 0.34);
+}
+
+.paluwagan-3d:active,
+.paluwagan-3d.is-pressed {
+  transform: translate(7px, 7px);
+  text-shadow:
+    0 0 0 transparent,
+    1px 1px 0 rgba(97, 60, 0, 0.2);
+  transition:
+    transform 0.05s ease-out,
+    text-shadow 0.05s ease-out;
+}
+
+.dark .paluwagan-3d {
+  color: #facc15;
+  text-shadow:
+    1px 1px 0 #ca8a04,
+    2px 2px 0 #a16207,
+    3px 3px 0 #854d0e,
+    4px 4px 0 #713f12,
+    5px 5px 0 #542d09,
+    6px 6px 0 #3a1c04,
+    7px 7px 0 #1f0d01,
+    8px 8px 18px rgba(0, 0, 0, 0.85);
+}
+
+.dark .paluwagan-3d:hover {
+  color: #fde047;
+  transform: translate(-1px, -1px);
+  text-shadow:
+    1px 1px 0 #ca8a04,
+    2px 2px 0 #a16207,
+    3px 3px 0 #854d0e,
+    4px 4px 0 #713f12,
+    5px 5px 0 #542d09,
+    6px 6px 0 #3a1c04,
+    7px 7px 0 #1f0d01,
+    8px 8px 0 #120700,
+    9px 9px 22px rgba(0, 0, 0, 0.95);
+}
+
+.dark .paluwagan-3d:active,
+.dark .paluwagan-3d.is-pressed {
+  transform: translate(7px, 7px);
+  text-shadow:
+    0 0 0 transparent,
+    1px 1px 0 rgba(0, 0, 0, 0.7);
+  transition:
+    transform 0.05s ease-out,
+    text-shadow 0.05s ease-out;
+}
+
 /* Subtle Scrollbars */
 ::-webkit-scrollbar {
   width: 6px;

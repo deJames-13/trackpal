@@ -93,9 +93,22 @@ export const GuestLanding: React.FC = () => {
         </div>
 
         {/* Swiss High-Contrast Display Heading */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-center tracking-tight text-neutral-950 dark:text-white max-w-4xl leading-[1.05]">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-center tracking-tight text-neutral-950 dark:text-white max-w-6xl leading-[1.05]">
           Transparent, Dispute-Free <br />
-          <span className="bg-[#F5B800] text-neutral-950 px-2 py-0.5 rounded-lg inline-block my-1">
+          <span
+            role="button"
+            tabIndex={0}
+            onClick={openOnboarding}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault()
+                openOnboarding()
+              }
+            }}
+            title="Press me!"
+            aria-label="Paluwagan - interactive 3D button"
+            className="paluwagan-3d mx-1 sm:mx-2 my-1 focus:outline-hidden focus-visible:ring-2 focus-visible:ring-[#F5B800] focus-visible:ring-offset-4 dark:focus-visible:ring-offset-[#0D0E11] rounded-sm"
+          >
             Paluwagan
           </span>{' '}
           Circles.
